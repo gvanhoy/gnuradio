@@ -26,7 +26,6 @@ GR_PYTHON_INSTALL(
     FILES
     __init__.py
     bpsk.py
-    constellation_map_generator.py
     cpm.py
     crc.py
     generic_mod_demod.py
