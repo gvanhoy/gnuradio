@@ -42,6 +42,7 @@ def constellation_map_generator(basis_cpoints, basis_symbols, k, pi):
     symbol_map[i] are the bits associated with
     constellation_points[i]).
     '''
+    #const_points, s = basis()
     const_points = basis_cpoints
     s = basis_symbols
     symbols = list()

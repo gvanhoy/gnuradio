@@ -63,7 +63,7 @@ we always select one rotation as our basic rotation that the other
 rotations are based off of.
 '''
 
-# BPSK Constellation symbolss
+# BPSK Constellation symbols
 def psk_2_0x0():
     '''
     0 | 1
@@ -74,6 +74,11 @@ def psk_2_0x0():
     symbols = [
         0, 1
     ]
+    constellation_points, symbols = constellation_map_generator(
+        constellation, 
+        0, 
+        0
+    )
     return digital.constellation_sector(
         constellation_points,
         symbols,
@@ -93,8 +98,13 @@ def psk_2_0x1():
         -1, 1
     ]
     symbols = [
-        1, 0
+        0, 1
     ]
+    constellation_points, symbols = constellation_map_generator(
+        constellation, 
+        1, 
+        0
+    )
     return digital.constellation_sector(
         constellation_points,
         symbols,
